@@ -1,0 +1,25 @@
+print("Enter the first number: ")
+let num1 = Double(readLine()!)!
+
+print("Enter the second number: ")
+let num2 = Double(readLine()!)!
+
+print("Select the action you want to take (+, -, *, /): ")
+let operator1 = readLine()!
+
+var result: Double = 0.0
+
+switch operator1 {
+case "+":
+    result = num1 + num2
+case "-":
+    result = num1 - num2
+case "*":
+    result = num1 * num2
+case "/":
+    result = num1 / num2
+default:
+    print("Invalid transaction type")
+}
+
+print("Result: \(result)")
